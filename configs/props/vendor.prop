@@ -162,6 +162,15 @@ persist.vendor.fingerprint.type=udfps_optical
 persist.vendor.fingerprint.sensor_location=360|1423|67
 persist.vendor.fingerprint.sensor_modules=goodix_fod
 
+# Fling
+ro.min.fling_velocity=160 
+ro.max.fling_velocity=20000
+ro.max.fling_velocity=20000 
+ro.vendor.qti.cgroup_follow.enable=true 
+persist.vendor.qti.inputopts.enable=true 
+persist.vendor.qti.inputopts.movetouchslop=0.6 
+ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
