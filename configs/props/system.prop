@@ -55,6 +55,7 @@ ro.netflix.bsp_rev=Q6125-17995-1
 # Radio
 persist.radio.NO_STAPA=1
 persist.rcs.supported = 1
+persist.vendor.radio.add_power_save=1
 persist.rmnet.data.enable=true
 
 # RIL
