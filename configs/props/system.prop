@@ -70,6 +70,7 @@ ro.vendor.perf.scroll_opt=true
 # Radio
 persist.radio.NO_STAPA=1
 persist.rcs.supported = 1
+persist.vendor.radio.add_power_save=1
 persist.rmnet.data.enable=true
 
 # RIL
