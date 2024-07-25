@@ -61,6 +61,10 @@ persist.vendor.sensors.enable.mag_filter=true
 # Time
 persist.vendor.delta_time.enable=true
 
+# UI
+PRODUCT_PROPERTY_OVERRIDES += \
+sys.use_fifo_ui=1
+
 # WFD
 persist.debug.wfd.enable=1
 
