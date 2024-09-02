@@ -37,7 +37,6 @@ WITH_GMS := true
 TARGET_CORE_GMS := true
 RISING_CHIPSET := Snapdragon665
 PRODUCT_NO_CAMERA := false
-TARGET_ENABLE_BLUR := true
 PRODUCT_BUILD_PROP_OVERRIDES += \
     RISING_MAINTAINER="leoxvis(vishwajithkv)"
 
