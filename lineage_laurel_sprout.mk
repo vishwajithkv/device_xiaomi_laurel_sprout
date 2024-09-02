@@ -31,9 +31,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from laurel_sprout device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit MindTheGapps
-# $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+# RisingOS
+RISING_MAINTAINER := leoxvis(vishwajithkv)
+WITH_GMS := true
+TARGET_CORE_GMS := true
+RISING_CHIPSET := Snapdragon665
+PRODUCT_NO_CAMERA := false
+TARGET_ENABLE_BLUR := true
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_MAINTAINER="leoxvis(vishwajithkv)"
 
+# Device Identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_MANUFACTURER := Xiaomi
