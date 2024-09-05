@@ -33,8 +33,6 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # RisingOS
 RISING_MAINTAINER := leoxvis(vishwajithkv)
-WITH_GMS := true
-TARGET_CORE_GMS := true
 RISING_CHIPSET := Snapdragon665
 PRODUCT_NO_CAMERA := false
 PRODUCT_BUILD_PROP_OVERRIDES += \
