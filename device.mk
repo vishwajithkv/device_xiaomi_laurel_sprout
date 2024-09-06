@@ -107,6 +107,8 @@ PRODUCT_PACKAGES += \
     libstdc++_vendor \
     libgui_vendor \
     libcamera2ndk_vendor \
+    libsqlite.vendor \
+    libsqlite.vendor:64  \
     libdng_sdk.vendor
 
 PRODUCT_COPY_FILES += \
@@ -135,6 +137,11 @@ PRODUCT_COPY_FILES += \
 # Config Store
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service
+
+# CURL
+PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libcurl.vendor:64 
 
 # Disable Scudo
 PRODUCT_DISABLE_SCUDO := true
@@ -556,7 +563,8 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
-    libwfdaac_vendor
+    libwfdaac_vendor \
+    libpng.vendor 
 
 # Inherit the proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/laurel_sprout/laurel_sprout-vendor.mk)
