@@ -106,6 +106,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libstdc++_vendor \
     libgui_vendor \
+    libpiex \
+    libpiex_shim \
     libcamera2ndk_vendor \
     libsqlite.vendor \
     libsqlite.vendor:64  \
@@ -476,6 +478,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0 \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@2.1-service.multihal \
+    android.frameworks.sensorservice@1.0  \
     libsensorndkbridge \
     android.hardware.sensors@2.1.vendor
 
