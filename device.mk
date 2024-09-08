@@ -178,29 +178,7 @@ PRODUCT_PACKAGES += \
 # Media configs
 PRODUCT_PACKAGES += \
     media_codecs_c2.xml \
-    media_codecs_performance_c2.xml \
-    media_codecs.xml \
-    media_codecs_vendor.xml \
-    media_codecs_vendor_audio.xml \
-    media_codecs_performance.xml
-
-# Net 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml 
-
-# OMX
-PRODUCT_PACKAGES += \
-    libc2dcolorconvert \
-    libmm-omxcore \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
-    libstagefrighthw
+    media_codecs_performance_c2.xml
 
 # Overlays
 PRODUCT_PACKAGES += \
