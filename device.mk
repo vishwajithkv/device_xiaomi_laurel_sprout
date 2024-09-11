@@ -204,16 +204,13 @@ PRODUCT_PACKAGES += \
     TelephonyLaurelSprout \
     WifiOverlayLaurelSprout
 
-# Perf
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
-
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power-service-qti \
+    libqti-perfd-client
 
 # Public libraries
 PRODUCT_COPY_FILES += \
@@ -272,6 +269,7 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/qcom-caf/common/libqti-perfd-client \
     hardware/xiaomi
 
 # Speed profile services and wifi-service to reduce RAM and storage.
