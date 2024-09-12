@@ -13,6 +13,7 @@ $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 # RisingOS
 RISING_MAINTAINER := leoxvis(vishwajithkv)
 RISING_CHIPSET := Snapdragon665
+TARGET_HAS_UDFPS := true
 PRODUCT_NO_CAMERA := false
 PRODUCT_BUILD_PROP_OVERRIDES += \
     RISING_MAINTAINER="leoxvis(vishwajithkv)"
