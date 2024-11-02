@@ -322,7 +322,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    libhidlbase-v32
+    libhidlbase-v32.vendor
 
 # Vulkan
 PRODUCT_COPY_FILES += \
