@@ -305,7 +305,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    libhidlbase-v32
+    libhidlbase-v32.vendor
 
 # WiFi
 PRODUCT_PACKAGES += \
