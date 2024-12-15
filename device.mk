@@ -166,15 +166,17 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig \
-    $(LOCAL_PATH)/overlay-lineage/packages/apps/Aperture
-
+PRODUCT_PACKAGES += \
+    ApertureLaurelSprout \
+    CarrierConfigLaurelSprout \
+    FrameworksLaurelSprout \
+    LineageSDKLaurelSprout \
+    SettingsLaurelSprout \
+    SettingsProviderLaurelSprout \
+    SystemUILaurelSprout \
+    TelephonyLaurelSprout \
+    WifiOverlayLaurelSprout
+    
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
@@ -304,7 +306,6 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
