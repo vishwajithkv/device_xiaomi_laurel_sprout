@@ -173,11 +173,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
-
-# Perf
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
-
+    
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
@@ -225,7 +221,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power-service-qti \
+    libqti-perfd-client
 
 # Public libraries
 PRODUCT_COPY_FILES += \
@@ -269,7 +266,8 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi
+    hardware/qcom-caf/common/libqti-perfd-client \
+    hardware/xiaomi 
 
 # Speed profile services and wifi-service to reduce RAM and storage.
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
