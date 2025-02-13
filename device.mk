@@ -46,6 +46,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
+    liba2dpoffload \
     libaudio-resampler \
     libqcompostprocbundle \
     libqcomvisualizer \
