@@ -1,5 +1,8 @@
 # Unpinned blobs from laurel_sprout-user 11 RKQ1.200903.002 V12.0.26.0.RFQMIXM release-keys
 
+# Current blobs with ELF checks disabled:
+# libcne, libwqe, lowi-server, imsdatadaemon depend on libwpa_client, which is a gnu makefile target
+
 # ACDB
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Codec_cal.acdb
