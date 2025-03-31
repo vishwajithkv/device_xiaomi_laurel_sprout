@@ -15,6 +15,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from laurel_sprout device
 $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 
+# Crdroid Stuff
+TARGET_HAS_UDFPS := true
+
 PRODUCT_NAME := lineage_laurel_sprout
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_MANUFACTURER := Xiaomi
